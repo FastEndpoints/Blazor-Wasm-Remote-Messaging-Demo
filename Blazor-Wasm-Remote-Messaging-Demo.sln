@@ -1,0 +1,66 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.0.0
+MinimumVisualStudioVersion = 16.0.0.0
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "bWasm.Server", "Server\bWasm.Server.csproj", "{2806F744-6B05-4AFA-905A-9771503FEBCD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "bWasm.Client", "Client\bWasm.Client.csproj", "{E77CA094-2E08-43F3-A873-3375418DFDE9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "bWasm.Contracts", "Shared\bWasm.Contracts.csproj", "{897BFD7E-D1E4-4A04-A2C2-33E56C55DAEF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E77CA094-2E08-43F3-A873-3375418DFDE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E77CA094-2E08-43F3-A873-3375418DFDE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E77CA094-2E08-43F3-A873-3375418DFDE9}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{E77CA094-2E08-43F3-A873-3375418DFDE9}.Debug|x64.Build.0 = Debug|Any CPU
+		{E77CA094-2E08-43F3-A873-3375418DFDE9}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{E77CA094-2E08-43F3-A873-3375418DFDE9}.Debug|x86.Build.0 = Debug|Any CPU
+		{E77CA094-2E08-43F3-A873-3375418DFDE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E77CA094-2E08-43F3-A873-3375418DFDE9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E77CA094-2E08-43F3-A873-3375418DFDE9}.Release|x64.ActiveCfg = Release|Any CPU
+		{E77CA094-2E08-43F3-A873-3375418DFDE9}.Release|x64.Build.0 = Release|Any CPU
+		{E77CA094-2E08-43F3-A873-3375418DFDE9}.Release|x86.ActiveCfg = Release|Any CPU
+		{E77CA094-2E08-43F3-A873-3375418DFDE9}.Release|x86.Build.0 = Release|Any CPU
+		{2806F744-6B05-4AFA-905A-9771503FEBCD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2806F744-6B05-4AFA-905A-9771503FEBCD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2806F744-6B05-4AFA-905A-9771503FEBCD}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{2806F744-6B05-4AFA-905A-9771503FEBCD}.Debug|x64.Build.0 = Debug|Any CPU
+		{2806F744-6B05-4AFA-905A-9771503FEBCD}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{2806F744-6B05-4AFA-905A-9771503FEBCD}.Debug|x86.Build.0 = Debug|Any CPU
+		{2806F744-6B05-4AFA-905A-9771503FEBCD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2806F744-6B05-4AFA-905A-9771503FEBCD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2806F744-6B05-4AFA-905A-9771503FEBCD}.Release|x64.ActiveCfg = Release|Any CPU
+		{2806F744-6B05-4AFA-905A-9771503FEBCD}.Release|x64.Build.0 = Release|Any CPU
+		{2806F744-6B05-4AFA-905A-9771503FEBCD}.Release|x86.ActiveCfg = Release|Any CPU
+		{2806F744-6B05-4AFA-905A-9771503FEBCD}.Release|x86.Build.0 = Release|Any CPU
+		{897BFD7E-D1E4-4A04-A2C2-33E56C55DAEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{897BFD7E-D1E4-4A04-A2C2-33E56C55DAEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{897BFD7E-D1E4-4A04-A2C2-33E56C55DAEF}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{897BFD7E-D1E4-4A04-A2C2-33E56C55DAEF}.Debug|x64.Build.0 = Debug|Any CPU
+		{897BFD7E-D1E4-4A04-A2C2-33E56C55DAEF}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{897BFD7E-D1E4-4A04-A2C2-33E56C55DAEF}.Debug|x86.Build.0 = Debug|Any CPU
+		{897BFD7E-D1E4-4A04-A2C2-33E56C55DAEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{897BFD7E-D1E4-4A04-A2C2-33E56C55DAEF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{897BFD7E-D1E4-4A04-A2C2-33E56C55DAEF}.Release|x64.ActiveCfg = Release|Any CPU
+		{897BFD7E-D1E4-4A04-A2C2-33E56C55DAEF}.Release|x64.Build.0 = Release|Any CPU
+		{897BFD7E-D1E4-4A04-A2C2-33E56C55DAEF}.Release|x86.ActiveCfg = Release|Any CPU
+		{897BFD7E-D1E4-4A04-A2C2-33E56C55DAEF}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8A993196-8190-437B-9833-26951A84B381}
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+	EndGlobalSection
+EndGlobal
