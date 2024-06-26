@@ -9,7 +9,7 @@
     <ItemGroup>
         <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="8.0.6"/>
         <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="8.0.6" PrivateAssets="all"/>
-        <PackageReference Include="FastEndpoints.Messaging.Remote.Core" Version="5.26.0.20-beta"/>        
+        <PackageReference Include="FastEndpoints.Messaging.Remote.Core" Version="5.26.0.24-beta"/>
         <ProjectReference Include="..\Shared\bWasm.Contracts.csproj"/>
     </ItemGroup>
 

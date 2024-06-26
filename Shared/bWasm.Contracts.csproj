@@ -11,6 +11,6 @@
     </ItemGroup>
 
     <ItemGroup>
-        <PackageReference Include="FastEndpoints.Messaging.Core" Version="5.26.0.20-beta"/>
+        <PackageReference Include="FastEndpoints.Messaging.Core" Version="5.26.0.24-beta"/>
     </ItemGroup>
 </Project>

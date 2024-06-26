@@ -9,7 +9,7 @@ bld.RootComponents.Add<App>("#app");
 bld.RootComponents.Add<HeadOutlet>("head::after");
 
 var app = bld.Build();
-app.Services.MapRemote(
+app.Services.MapRemoteCore(
     "https://localhost:7012",
     c =>
     {
