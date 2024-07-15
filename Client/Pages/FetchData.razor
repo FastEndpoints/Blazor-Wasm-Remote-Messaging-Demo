@@ -4,19 +4,19 @@
 
 <PageTitle>Weather forecast</PageTitle>
 
-<h1>@result</h1>
+<h1>@_result</h1>
 
-@code {
-    private string result = "retrieving...";
+@code
+{
+    private string _result = "retrieving...";
 
     protected override async Task OnInitializedAsync()
     {
-        result = (await new CreateOrderCommand
-                      {
-                          OrderId = 1001,
-                          CustomerName = "Holly Simms"
-                      }
-                      .RemoteExecuteAsync()).Message;
+        _result = (await new CreateOrderCommand
+                       {
+                           OrderId = 1001,
+                           CustomerName = "Holly Simms"
+                       }
+                       .RemoteExecuteAsync()).Message;
     }
-
 }
