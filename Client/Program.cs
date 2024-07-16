@@ -14,5 +14,18 @@ app.Services.MapRemoteCore(
     c =>
     {
         c.Register<CreateOrderCommand, CreateOrderResult>();
+        c.Subscribe<OrderCreatedEvent, OrderCreatedEventHandler>();
     });
 await app.RunAsync();
+
+sealed class OrderCreatedEventHandler : IEventHandler<OrderCreatedEvent>
+{
+    internal static string? Result { get; private set; }
+
+    public Task HandleAsync(OrderCreatedEvent e, CancellationToken c)
+    {
+        Result = $"{e.Description} Order Id: {e.OrderId}";
+
+        return Task.CompletedTask;
+    }
+}

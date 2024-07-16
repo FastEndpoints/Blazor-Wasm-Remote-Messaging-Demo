@@ -1,0 +1,42 @@
+﻿@page "/test"
+@using bWasm.Shared
+@using FastEndpoints
+
+<PageTitle>Test</PageTitle>
+
+<h1>Command Send: @_cmdResult</h1>
+<h1>Event Receive: @_evntResult</h1>
+
+@code
+{
+    private string _cmdResult = "Sending command to server...";
+    private string _evntResult = "Waiting for event result...";
+
+    protected override async Task OnInitializedAsync()
+    {
+        _cmdResult = (await new CreateOrderCommand
+                          {
+                              OrderId = 1001,
+                              CustomerName = "Holly Simms"
+                          }
+                          .RemoteExecuteAsync()).Message;
+
+        _ = EventResultCheckerTask();
+    }
+
+    async Task EventResultCheckerTask()
+    {
+        while (true)
+        {
+            await Task.Delay(1000);
+
+            if (OrderCreatedEventHandler.Result is null || OrderCreatedEventHandler.Result == _evntResult)
+                continue;
+
+            _evntResult = OrderCreatedEventHandler.Result;
+            StateHasChanged();
+
+            return;
+        }
+    }
+}
